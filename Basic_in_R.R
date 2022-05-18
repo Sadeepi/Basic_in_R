@@ -107,9 +107,14 @@ as.numeric(FALSE)
 as.logical("TRUE")
 as.logical("True")
 
-x=readline(prompt = "Enter your age: ")
+x=readline(prompt = "Enter your age: ")     # all the inputs are saved as characters
 y=readline(prompt = "Enter your name: ")
-
+x
+y
+class(x)
+x+10                # x is a character. so it gives an error
+x>10                # It does not give an error. Because it supports for the relational operation.
+ 
 as.numeric(x)+90
 
 z=readline()
